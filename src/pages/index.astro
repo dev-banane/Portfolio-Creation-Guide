@@ -4,7 +4,6 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Jakob — Portfolio">
   <main>
-    <!-- Hero Section -->
     <section id="hero" class="min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-950">
       <div class="max-w-2xl mx-auto text-center">
         <h1 class="text-6xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-600">
@@ -25,7 +24,6 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="py-20 px-6 bg-white dark:bg-slate-950">
       <div class="max-w-3xl mx-auto">
         <h2 class="text-4xl font-bold mb-8 text-slate-900 dark:text-white">About</h2>
@@ -34,7 +32,7 @@ import Layout from '../layouts/Layout.astro';
             I'm a full-stack engineer with a passion for building products that solve real problems. Based in Germany, I work with modern web technologies and have experience across the entire product lifecycle—from concept and design through implementation and launch.
           </p>
           <p class="text-lg text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">
-            My recent work includes the <strong>giftGRÜN Body-Tracking Project</strong>, where I contributed to designing and implementing systems for health data collection and visualization. I'm particularly interested in the intersection of web technology, real-time systems, and user experience.
+            My recent work includes the giftGRÜN Body-Tracking Project, where I contributed to designing and implementing systems for health data collection and visualization. I'm particularly interested in the intersection of web technology, real-time systems, and user experience.
           </p>
           <p class="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
             Beyond code, I have a deep appreciation for German art history, literature, and design. These influences shape how I approach product design—with an emphasis on clarity, intention, and craft.
@@ -43,91 +41,78 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
 
-    <!-- Work Section -->
     <section id="work" class="py-20 px-6 bg-slate-50 dark:bg-slate-900">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-4xl font-bold mb-12 text-slate-900 dark:text-white">Recent Work</h2>
         
         <div class="space-y-12">
-          <!-- Project 1 -->
           <div class="bg-white dark:bg-slate-800 rounded-lg p-8 border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow">
-            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">giftGRÜN Body-Tracking Project</h3>
-            <p class="text-slate-600 dark:text-slate-400 mb-4">
-              A comprehensive body-tracking system designed for health data collection and real-time visualization. Worked on architecture, implementation, and integration of tracking components.
-            </p>
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-2">giftGRÜN Body-Tracking</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">Body-tracking application enabling real-time biomechanical feedback and movement tracking in modern web browsers.</p>
             <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">Full Stack</span>
-              <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Real-time Systems</span>
-              <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium">Data Visualization</span>
+              <span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 text-xs font-semibold rounded text-slate-600 dark:text-slate-300">TypeScript</span>
+              <span class=" Gens-Tracking text-xs bg-slate-100 rounded px-2">WebRTC</span>
+              <span class="text-xs bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300 px-3 py-1 rounded">MediaPipe</span>
             </div>
           </div>
 
-          <!-- Project 2 -->
-          <div class="bg-white dark:bg-slate-800 rounded-lg p-8 border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow">
-            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">German Art History Archive</h3>
-            <p class="text-slate-600 dark:text-slate-400 mb-4">
-              Curated and structured a comprehensive database of important German artists, their creations, and historical context. Interactive timeline and exploration interface.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 rounded-full text-sm font-medium">Research</span>
-              <span class="px-3 py-1 bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300 rounded-full text-sm font-medium">Data Organization</span>
-              <span class="px-3 py-1 bg-rose-100 dark:bg-rose-900 text-rose-700 dark:text-rose-300 rounded-full text-sm font-medium">Interactive UI</span>
+          <div class="bg-card border border-border p-8 rounded-lg shadow-sm">
+            <h3 class="text-2xl font-bold text-foreground mb-2">German Art History Archive</h3>
+            <p class="text-muted-foreground mb-4">Interactive archive tracking Expressionism, Bauhaus movements, and digital preservation of 20th-century German design catalogues.</p>
+            <div class="flex flex-wrap gap-2 text-xs font-semibold text-muted-foreground">
+              <span class="bg-muted px-3 py-1 rounded">Astro 5</span>
+              <span class="bg-muted px-3 py-1 rounded">Tailwind CSS</span>
+              <span class="bg-astrojs/tailwind px-3 py-1 rounded text-white">Cloudflare KV</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 px-6 bg-white dark:bg-slate-950">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-4xl font-bold mb-12 text-slate-900 dark:text-white">Skills</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-          <div>
-            <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">Frontend</h3>
-            <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-              <li>• React / Vue.js / Astro</li>
-              <li>• TypeScript</li>
-              <li>• Tailwind CSS</li>
-              <li>• Real-time UIs</li>
+    <section id="skills" class="py-20 bg-muted/30">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8">Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="p-6 bg-card border border-border rounded-lg shadow-sm">
+            <h3 class="font-bold mb-3">Frontend</h3>
+            <ul class="space-y-2 text-sm text-muted-foreground">
+              <li>HTML5 / CSS3 / JavaScript</li>
+              <li>TypeScript</li>
+              <li>Tailwind CSS</li>
+              <li>Astro</li>
             </ul>
           </div>
-          
-          <div>
-            <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">Backend</h3>
-            <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-              <li>• Node.js / Express</li>
-              <li>• Database Design</li>
-              <li>• API Architecture</li>
-              <li>• Cloudflare Workers</li>
+          <div class="p-6 bg-card border border-border rounded-lg shadow-sm">
+            <h3 class="font-bold mb-3">Backend</h3>
+            <ul class="space-y-2 text-sm text-muted-foreground">
+              <li>Node.js / Express</li>
+              <li>REST APIs</li>
+              <li>SQL / SQLite</li>
+              <li>Cloudflare Workers & KV</li>
             </ul>
           </div>
-
-          <div>
-            <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">Tools & Platforms</h3>
-            <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-              <li>• Git & GitHub</li>
-              <li>• Cloudflare</li>
-              <li>• Docker</li>
-              <li>• Web Standards</li>
+          <div class="p-6 bg-card border border-border rounded-lg shadow-sm">
+            <h3 class="font-bold mb-3">Tools</h3>
+            <ul class="space-y-2 text-sm text-muted-foreground">
+              <li>Git & GitHub</li>
+              <li>Docker</li>
+              <li>Wrangler CLI</li>
+              <li>VS Code / Cursor</li>
             </ul>
           </div>
-
-          <div>
-            <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">Other</h3>
-            <ul class="space-y-2 text-slate-700 dark:text-slate-300">
-              <li>• Product Thinking</li>
-              <li>• UX/UI Design</li>
-              <li>• Technical Writing</li>
-              <li>• German/English</li>
+          <div class="p-6 bg-card border border-border rounded-lg shadow-sm">
+            <h3 class="font-bold mb-3">Other</h3>
+            <ul class="space-y-2 text-sm text-muted-foreground">
+              <li>Product Design</li>
+              <li>German Art History</li>
+              <li>Biomechanical Tracking</li>
+              <li>Agile Workflows</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="py-20 px-6 bg-slate-50 dark:bg-slate-900">
       <div class="max-w-2xl mx-auto text-center">
         <h2 class="text-4xl font-bold mb-6 text-slate-900 dark:text-white">Get in Touch</h2>
@@ -155,7 +140,6 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="py-8 px-6 bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
       <div class="max-w-4xl mx-auto text-center text-slate-600 dark:text-slate-400">
         <p>© 2026 Jakob. Built with Astro + Tailwind.</p>
