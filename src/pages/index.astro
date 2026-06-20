@@ -1,0 +1,175 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Jakob — Portfolio">
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-950">
+      <div class="max-w-2xl mx-auto text-center">
+        <h1 class="text-6xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-600">
+          Jakob
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-700 dark:text-slate-300 mb-8 leading-relaxed">
+          Full-stack engineer & product builder.
+          <br/>Creating technology that matters.
+        </p>
+        <div class="flex gap-4 justify-center">
+          <a href="#work" class="px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+            View Work
+          </a>
+          <a href="#contact" class="px-8 py-3 border-2 border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg font-semibold hover:bg-blue-50 dark:hover:bg-slate-800 transition-colors">
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-white dark:bg-slate-950">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-4xl font-bold mb-8 text-slate-900 dark:text-white">About</h2>
+        <div class="prose prose-lg dark:prose-invert max-w-none">
+          <p class="text-lg text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">
+            I'm a full-stack engineer with a passion for building products that solve real problems. Based in Germany, I work with modern web technologies and have experience across the entire product lifecycle—from concept and design through implementation and launch.
+          </p>
+          <p class="text-lg text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">
+            My recent work includes the <strong>giftGRÜN Body-Tracking Project</strong>, where I contributed to designing and implementing systems for health data collection and visualization. I'm particularly interested in the intersection of web technology, real-time systems, and user experience.
+          </p>
+          <p class="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+            Beyond code, I have a deep appreciation for German art history, literature, and design. These influences shape how I approach product design—with an emphasis on clarity, intention, and craft.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="py-20 px-6 bg-slate-50 dark:bg-slate-900">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold mb-12 text-slate-900 dark:text-white">Recent Work</h2>
+        
+        <div class="space-y-12">
+          <!-- Project 1 -->
+          <div class="bg-white dark:bg-slate-800 rounded-lg p-8 border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow">
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">giftGRÜN Body-Tracking Project</h3>
+            <p class="text-slate-600 dark:text-slate-400 mb-4">
+              A comprehensive body-tracking system designed for health data collection and real-time visualization. Worked on architecture, implementation, and integration of tracking components.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">Full Stack</span>
+              <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">Real-time Systems</span>
+              <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium">Data Visualization</span>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="bg-white dark:bg-slate-800 rounded-lg p-8 border border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow">
+            <h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-3">German Art History Archive</h3>
+            <p class="text-slate-600 dark:text-slate-400 mb-4">
+              Curated and structured a comprehensive database of important German artists, their creations, and historical context. Interactive timeline and exploration interface.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 rounded-full text-sm font-medium">Research</span>
+              <span class="px-3 py-1 bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300 rounded-full text-sm font-medium">Data Organization</span>
+              <span class="px-3 py-1 bg-rose-100 dark:bg-rose-900 text-rose-700 dark:text-rose-300 rounded-full text-sm font-medium">Interactive UI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 bg-white dark:bg-slate-950">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold mb-12 text-slate-900 dark:text-white">Skills</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">Frontend</h3>
+            <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+              <li>• React / Vue.js / Astro</li>
+              <li>• TypeScript</li>
+              <li>• Tailwind CSS</li>
+              <li>• Real-time UIs</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">Backend</h3>
+            <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+              <li>• Node.js / Express</li>
+              <li>• Database Design</li>
+              <li>• API Architecture</li>
+              <li>• Cloudflare Workers</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">Tools & Platforms</h3>
+            <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+              <li>• Git & GitHub</li>
+              <li>• Cloudflare</li>
+              <li>• Docker</li>
+              <li>• Web Standards</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-4">Other</h3>
+            <ul class="space-y-2 text-slate-700 dark:text-slate-300">
+              <li>• Product Thinking</li>
+              <li>• UX/UI Design</li>
+              <li>• Technical Writing</li>
+              <li>• German/English</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-slate-50 dark:bg-slate-900">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6 text-slate-900 dark:text-white">Get in Touch</h2>
+        <p class="text-lg text-slate-700 dark:text-slate-300 mb-8">
+          Interested in collaborating or have a question? I'd love to hear from you.
+        </p>
+        
+        <div class="space-y-4">
+          <a href="mailto:jakob@uplift.de" class="inline-block px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+            Email: jakob@uplift.de
+          </a>
+          
+          <div class="flex justify-center gap-6 pt-4">
+            <a href="#" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 font-semibold transition-colors">
+              GitHub
+            </a>
+            <a href="#" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 font-semibold transition-colors">
+              LinkedIn
+            </a>
+            <a href="#" class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 font-semibold transition-colors">
+              Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+      <div class="max-w-4xl mx-auto text-center text-slate-600 dark:text-slate-400">
+        <p>© 2026 Jakob. Built with Astro + Tailwind.</p>
+      </div>
+    </footer>
+  </main>
+</Layout>
+
+<style>
+  main {
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
